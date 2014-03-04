@@ -62,7 +62,7 @@ address.author a:hover {
 .alternateHolder {
 	background-color: #fff; /*ffe*/
 	padding-top: 42px;
-	padding-bottom: 9	0px;
+	padding-bottom: 190px;
 	padding-left: 68px;
 	padding-right: 6px;
 	float: left;
@@ -129,6 +129,7 @@ p {
 	border-top-right-radius: 36px;
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
+	/*width: 200px;*/
 	/*border-bottom: .06em solid grey;*/
 }
 
