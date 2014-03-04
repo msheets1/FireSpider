@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Condiment|Varela+Round' rel='stylesheet' type='text/css'>
+		<link href='css/main.css' rel='stylesheet'>
+		<title></title>
+	</head>
+	<body>
+		<header>
+			<h1 class='pageTitle'><a href='viewer.html'>Infiniti</a></h1>
+		</header>
+		<div class='underHeaderSpacer'>
+		</div>
+		<div class='arrow arrowLeft'>
+		<
+		</div>
+		
+		<div class='alternateHolder'>
+		
+			<p>This is just some sample text for trying this out. This is just some sample text for trying this out. This is just some sample text for trying this out. This is just some sample text for trying this out. This is just some sample text for trying this out. This is just some sample text for trying this out. </p>
+			<div class='commentContainer'>
+				<div class='commentTag'>+
+				</div>
+				<ul class='commentBag'>
+					<li class='comment'>This is just a sample comment.
+					</li>
+					<li class='comment'>And here's another one. Isn't that pretty sweet?
+					</li>
+					<li class='comment'>I think this is exactly what the doctor ordered.
+					</li>
+					<li class='comment'>And another...
+					</li>
+					<li class='comment'>And another...
+					</li>
+					<li class='comment'>And another...
+					</li>
+					<li class='comment'>And another...
+					</li>
+					<li class='comment'>And another...
+					</li>
+				</ul>
+			</div>
+			<p>This is just some sample text for trying this out. This is just some sample text for trying this out. This is just some sample text for trying this out. This is just some sample text for trying this out. This is just some sample text for trying this out. This is just some sample text for trying this out. </p>				
+			<div class='commentContainer'>
+				<div class='commentTag'>+
+				</div>
+				<ul class='commentBag'>
+					<li class='comment'>This is just a sample comment.
+					</li>
+					<li class='comment'>And here's another one. Isn't that pretty sweet?
+					</li>
+					<li class='comment'>I think this is exactly what the doctor ordered.
+					</li>
+					<li class='comment'>And another...
+					</li>
+					<li class='comment'>And another...
+					</li>
+					<li class='comment'>And another...
+					</li>
+				</ul>
+			</div>
+			<p>This is just some sample text for trying this out. <mark class='yellow'>This is just some sample text</mark> for trying this out. This is just some sample text for trying this out. This is just some sample text for trying this out. This is just some sample text for trying this out. This is just some sample text for trying this out. </p>
+			<p>This is just some sample text for trying this out. This is just some sample text for trying this out. This is just some sample text for trying this out. This is just some sample text for trying this out. This is just some sample text for trying this out. This is just some sample text for trying this out. </p>
+			<p>This is just some sample text for trying this out. This is just some sample text for trying this out. This is just some sample text for trying this out. This is just some sample text for trying this out. This is just some sample text for trying this out. This is just some sample text for trying this out. </p>
+			<div class='commentContainer'>
+				<div class='commentTag'>+
+				</div>
+				<ul class='commentBag'>
+					<li class='comment'>This is just a sample comment.
+					</li>
+					<li class='comment'>And here's another one. Isn't that pretty sweet?
+					</li>
+					<li class='comment'>I think this is exactly what the doctor ordered.
+					</li>
+					<li class='comment'>And another...
+					</li>
+				</ul>
+			</div>
+			
+			
+		</div>
+		<div class='arrow arrowRight'>
+		>
+		</div>
+		
+		
+		<style>
+		
+			.arrow {
+				float: left;
+				height: 800px;
+				width: 42px;
+				background-color: #ffe;
+				display: none;
+			}
+			.arrow:hover {
+				background-color: #fff;
+				cursor: pointer;
+			}
+			.arrowLeft {
+				border-right: .06em solid #dde;
+			}
+			.arrowRight {
+				border-left: .06em solid #dde;
+			}
+		
+		</style>
+		
+		<div class='darkLayer'></div>
+		<div class='floatEnder'></div>
+		<footer>
+			<address class='author'><a href='https://www.facebook.com/brian.farnsworth.372' target='_blank'>Brian Farnsworth</a></address>
+			<address class='author'><a href='https://www.facebook.com/cameron.d.hall.1' target='_blank'>Cameron Hall</a></address>
+			<address class='author'><a href='https://www.facebook.com/benmackley' target='_blank'>Benjamin Mackley</a></address>
+			<address class='author'><a href='https://www.facebook.com/matthewdsheets1' target='_blank'>Matthew Sheets</a></address>
+		</footer>
+			
+	</body>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>
+			
+		$(function() {
+		
+			$('.commentTag').on('click',function(evt) {
+				console.log('.commentTag clicked.');
+				var target = evt.target;
+				
+				// TODO: figure out logic on closing all others when clicking one AND
+				// Closing self when clicked again.
+				
+				$(target).toggleClass('open');
+				$('.commentBag').hide();
+				
+				if ($(target).hasClass('open')) {
+					$(target).siblings('.commentBag').show();
+				} else {
+					$(target).siblings('.commentBag').hide();
+				}
+				
+				/*
+				
+				// Close other open comments
+				$('.commentTag.open > .commentBag').hide();
+				$(target).toggleClass('open');
+				
+				// Set class and open the commentBag
+				$(target).siblings('.commentBag').toggle();
+				//$(target).html( $(target).html() == "..." ? "+" : "...");
+				console.log('bag should be showing');
+				
+				*/
+				
+				
+			});
+		
+		});
+	
+	
+	</script>
+	
+</html>
+
+
+
+
+
+
+
+
+
+			<!--
+			<div class='contentHolder'>
+				<div class='textArea'>
+				
+				</div>
+				<div class='commentArea'>
+				
+				</div>
+				<div class='floatEnder'>
+				</div>
+			</div>
+			
+			<style>
+				.contentHolder {
+					
+				}
+			
+				.textArea {
+					/*display:inline-block;*/
+					float:left;
+					position: absolute;
+
+					width: 100%;
+					padding-top: 16px;
+					padding-bottom: 40px;
+					padding-left: 18px;
+					padding-right: 6px;
+					background-color: #fffff4;
+				}
+				.commentArea {
+					width: 100%;
+					/*display:inline-block;*/
+					float:right;
+					position: absolute;
+					background-color: #ffffdd;
+					padding: 20px;
+				
+				}
+				.floatEnder {
+					clear: both;
+				}
+			</style>
+			
+			
+			-->

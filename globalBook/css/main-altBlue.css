@@ -1,0 +1,152 @@
+
+/* ------ BODY / NAVIGATION ------ */
+body {
+	margin: 0;
+	background-color: #565656;
+}
+
+header {
+	background-color: #202056; /*228811*/
+	position: fixed;
+	width: 100%;
+	z-index: 5000;
+	padding-left: 35px;
+}
+
+h1, h1 a {
+	color: white;
+	font-family: 'Segoe UI Light';
+	text-decoration: none;
+}
+
+h1:hover, h1 a:hover {
+	color: white;
+	text-shadow: 0 0 2px #ffffff;
+	transition: text-shadow 200ms;
+}
+
+.underHeaderSpacer {
+	padding: 30px;
+}
+
+.darkLayer {
+	background-color: #000036; /*115505*/
+	padding: 60px;
+}
+.darkerLayer {
+	background-color: #000036; /*104505*/
+	padding: 20px;
+}
+
+footer {
+	background-color: #000036; /*#115505*/
+	padding: 60px;
+	padding-bottom: 410px;
+}
+
+address.author {
+	font-family: 'Segoe UI';
+	color: white;
+}
+
+/* ------ CONTENT ------ */
+
+.alternateHolder {
+	background-color: #ffe;
+	padding-top: 36px;
+	padding-bottom: 40px;
+	padding-left: 18px;
+	padding-right: 6px;
+	float: left;
+	max-width: 600px;
+	margin-left: 14px;
+	
+	/*
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	*/
+	
+}
+p {
+	min-width: 160px;
+	max-width: 60%;
+	/*background-color: #550055;*/
+	float: left;
+}
+.commentContainer {
+	display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	
+	margin-left: 18px;
+	float: left;
+}
+
+.commentTag {
+	background-color: #e4ffe4;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	padding-left: 9px;
+	padding-right: 9px;
+	opacity: .2;
+	border-top-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	transition: all 400ms;
+	cursor: pointer;
+	
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.commentTag:hover {
+	opacity: 1;
+	background-color: #d4efd4;
+	transition: all 200ms;
+}	
+
+.commentTag:active {
+	opacity: 1;
+	background-color: #c4dfc4;
+	transition: all 200ms;
+}
+
+.commentTag.open {
+	opacity: 1;
+	background-color: #d4efd4;
+	border-top-right-radius: 36px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.commentTag.open:hover {
+	/*background-color: #d9f4d9;*/
+}
+
+.commentBag {
+	display: none;
+	min-width: 20px;
+	max-width: 180px;
+	margin-top: 3px;
+	padding-left: 4px;
+	list-style: none;
+	
+	font-family: 'Segoe UI';
+	font-size: 80%;
+}
+
+.commentBag li {
+	margin-top: .6em;
+}
+
+.floatEnder {
+	clear: both;
+}
+
+			
+	
+	
