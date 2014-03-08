@@ -19,6 +19,7 @@ h1, h1 a {
 	color: white;
 	font-family: 'Segoe UI Light';
 	text-decoration: none;
+	letter-spacing: 3px; 
 }
 
 h1:hover, h1 a:hover {
@@ -85,7 +86,21 @@ p {
 	max-width: 60%;
 	/*background-color: #550055;*/
 	float: left;
+	padding: 8px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	/*transition: all 100ms;*/
 }
+/* Make this optional? */
+/* Give control to user over *all* elements? */
+
+/*
+p:hover {
+	background-color: #fdfdf9;
+	transition: all 200ms;
+}
+*/
+
 .commentContainer {
 	display: block;
 	-webkit-margin-before: 1em;
@@ -101,7 +116,7 @@ p {
 	background-color: #e4ffe4;
 	padding-top: 3px;
 	padding-bottom: 2px;
-	padding-left: 9px;
+	padding-left: 7px;
 	padding-right: 9px;
 	opacity: .3;
 	border-top-right-radius: 12px;
@@ -119,6 +134,16 @@ p {
 	opacity: 1;
 	background-color: #d4efd4;
 	transition: all 200ms;
+	
+	/*
+	border-top-left-radius: 16px;
+	border-bottom-left-radius: 16px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 16px;
+	
+	Could implement with a transform
+	Do these looking like leaves.
+	*/
 }	
 
 .commentTag:active {
@@ -166,8 +191,8 @@ p {
 	
 	border-top: 1px solid lightgrey;
 	
-	background-color: #fff;
-	opacity: .6;
+	/*background-color: #fff;*/
+	/*opacity: .6;*/
 }
 
 
